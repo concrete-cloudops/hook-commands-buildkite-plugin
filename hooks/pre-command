@@ -1,4 +1,9 @@
 #!/bin/bash
-set -exuo pipefail
+set -exo pipefail
 
-ls -l
+if [ "z$BUILDKITE_PLUGIN_HOOK_COMMANDS_PRECOMMAND" == "z" ]; then
+  echo "Skipping pre-command hook since preCommand configuration not set ..."
+  exit 0
+fi
+
+/bin/bash -c "$BUILDKITE_PLUGIN_HOOK_COMMANDS_PRECOMMAND"

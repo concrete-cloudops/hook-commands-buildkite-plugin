@@ -1,4 +1,9 @@
-name: Test Plugin
-description: Tests Buildkite plugin functionality
+name: Hook Commands
+description: Run commands during Buildkite pipeline hooks
 author: https://github.com/njlaw
 requirements: []
+configuration:
+  properties:
+    preCommand:
+      type: string
+  additionalProperties: false
