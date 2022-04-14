@@ -1,0 +1,4 @@
+name: Test Plugin
+description: Tests Buildkite plugin functionality
+author: https://github.com/njlaw
+requirements: []
