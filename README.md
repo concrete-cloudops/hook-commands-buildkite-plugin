@@ -10,7 +10,7 @@ Add the following to your `pipeline.yml`:
 steps:
   - command: ls
     plugins:
-      - concrete-cloudops/hook-commands#v1.0.0:
+      - concrete-cloudops/hook-commands#v1.0.1:
           preCommand: pwd
 ```
 
