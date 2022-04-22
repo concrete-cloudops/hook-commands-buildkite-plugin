@@ -1,0 +1,8 @@
+#!/bin/bash
+set -eo pipefail
+
+if [ "z$BUILDKITE_PLUGIN_HOOK_COMMANDS_POSTCOMMAND" == "z" ]; then
+  exit 0
+fi
+
+/bin/bash -c "$BUILDKITE_PLUGIN_HOOK_COMMANDS_POSTCOMMAND"

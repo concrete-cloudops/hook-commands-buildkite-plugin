@@ -4,6 +4,8 @@ author: https://github.com/njlaw
 requirements: []
 configuration:
   properties:
+    postCommand:
+      type: string
     preCommand:
       type: string
   additionalProperties: false

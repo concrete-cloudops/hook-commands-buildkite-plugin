@@ -12,6 +12,7 @@ steps:
     plugins:
       - concrete-cloudops/hook-commands#v1.0.1:
           preCommand: pwd
+          postCommand: echo "Doing this"
 ```
 
 ## Configuration
