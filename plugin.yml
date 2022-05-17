@@ -4,6 +4,8 @@ author: https://github.com/njlaw
 requirements: []
 configuration:
   properties:
+    preCheckout:
+      type: string
     postCommand:
       type: string
     preCommand:

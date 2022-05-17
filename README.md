@@ -10,16 +10,25 @@ Add the following to your `pipeline.yml`:
 steps:
   - command: ls
     plugins:
-      - concrete-cloudops/hook-commands#v1.0.1:
+      - concrete-cloudops/hook-commands#v1.0.3:
+          preCheckout: echo "Doing that"
           preCommand: pwd
           postCommand: echo "Doing this"
 ```
 
 ## Configuration
 
+### `preCheckout` (Optional, string)
+
+Command to run during the pre-checkout hook.
+
 ### `preCommand` (Optional, string)
 
 Command to run during the pre-command hook.
+
+### `postCommand` (Optional, string)
+
+Command to run during the post-command hook.
 
 ## Developing
 
